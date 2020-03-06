@@ -1,7 +1,7 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
-import {SECONDARY} from '../utils/colors';
-import Routes from '../pages/routes';
+import { StatusBar } from 'react-native';
+import { SECONDARY } from '../utils/colors';
+import Routes from './routes';
 
 export default function App() {
   return (
