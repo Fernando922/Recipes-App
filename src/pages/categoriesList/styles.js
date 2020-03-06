@@ -1,11 +1,13 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View``;
-
-export const Scroll = styled.ScrollView``;
+export const Content = styled.ScrollView`
+  flex: 1;
+  padding: 20px;
+`;
 
 export const Horizontal = styled.View`
-  height: 200px;
-  width: 100%;
-  padding: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 `;
