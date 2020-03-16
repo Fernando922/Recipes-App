@@ -28,7 +28,81 @@ export const categories = [
 export const recipes = [
   {
     id: '1',
+    idCategory: '1',
+    image:
+      'https://img.itdg.com.br/tdg/images/recipes/000/007/480/284957/284957_original.jpg',
+    name: 'Lanchão top',
+    ingredients: [
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+    ],
+    prepareMode: ['faça isso', 'faça aquilo', 'faça isso tb'],
+    tips: ['Se a calda for muito grossa ficará ruim de espalhar no bolo'],
+  },
+  {
+    id: '2',
+    idCategory: '2',
+    image:
+      'https://img.itdg.com.br/tdg/images/recipes/000/007/480/284957/284957_original.jpg',
+    name: 'Bolo de Chocolate',
+    ingredients: [
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+    ],
+    prepareMode: ['faça isso', 'faça aquilo', 'faça isso tb'],
+    tips: ['Se a calda for muito grossa ficará ruim de espalhar no bolo'],
+  },
+  {
+    id: '3',
+    idCategory: '3',
+    image:
+      'https://img.itdg.com.br/tdg/images/recipes/000/007/480/284957/284957_original.jpg',
+    name: 'Bolo de Chocolate',
+    ingredients: [
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+    ],
+    prepareMode: ['faça isso', 'faça aquilo', 'faça isso tb'],
+    tips: ['Se a calda for muito grossa ficará ruim de espalhar no bolo'],
+  },
+  {
+    id: '4',
     idCategory: '4',
+    image:
+      'https://img.itdg.com.br/tdg/images/recipes/000/007/480/284957/284957_original.jpg',
+    name: 'Bolo de Chocolate',
+    ingredients: [
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+      'ingrediente 1',
+    ],
+    prepareMode: ['faça isso', 'faça aquilo', 'faça isso tb'],
+    tips: ['Se a calda for muito grossa ficará ruim de espalhar no bolo'],
+  },
+  {
+    id: '5',
+    idCategory: '4',
+    image:
+      'https://img.itdg.com.br/tdg/images/recipes/000/007/480/284957/284957_original.jpg',
     name: 'Bolo de Chocolate',
     ingredients: [
       'ingrediente 1',

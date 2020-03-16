@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LinearGradient from 'react-native-linear-gradient';
 import { Horizontal, Content } from './styles';
 import CardCategorie from '../../components/cardCategorie';
 import Toolbar from '../../components/Toolbar';
 import { categories } from '../../utils/mock';
-import { PRIMARY, PRIMARY_LIGHT } from '../../utils/colors';
+import { ContainerGradient } from '../../utils/globalStyle';
 
 export default function CategoriesList({ navigation }) {
   return (
-    <LinearGradient style={{ flex: 1 }} colors={[PRIMARY, PRIMARY_LIGHT]}>
-      <Toolbar title="Categorias" />
+    <ContainerGradient>
+      <Toolbar title="Categorias" center />
       <Content>
         <Horizontal>
           {categories.map(categorie => (
@@ -24,7 +23,7 @@ export default function CategoriesList({ navigation }) {
           ))}
         </Horizontal>
       </Content>
-    </LinearGradient>
+    </ContainerGradient>
   );
 }
 

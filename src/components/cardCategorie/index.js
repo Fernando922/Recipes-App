@@ -4,7 +4,7 @@ import { Container, Image, Title } from './styles';
 
 export default function CardCategorie({ id, name, image, navigation }) {
   function openCategorie() {
-    navigation.navigate('RecipesList', { id });
+    navigation.navigate('RecipesList', { id, name });
   }
 
   return (
