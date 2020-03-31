@@ -16,7 +16,7 @@ export default function CardCategorie({ id, name, image, navigation }) {
 }
 
 CardCategorie.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   navigation: PropTypes.shape({

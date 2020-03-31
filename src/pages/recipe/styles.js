@@ -40,3 +40,8 @@ export const Title = styled.Text`
 `;
 
 export const ItemList = styled.Text``;
+
+export const NoTip = styled.Text`
+  margin-top: 16px;
+  text-align: center;
+`;
