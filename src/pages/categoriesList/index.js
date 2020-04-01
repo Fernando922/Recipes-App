@@ -5,9 +5,11 @@ import CardCategorie from '../../components/cardCategorie';
 import Toolbar from '../../components/Toolbar';
 import { ContainerGradient } from '../../utils/globalStyle';
 import api from '../../services/api';
+import Splash from '../../components/splash';
 
 export default function CategoriesList({ navigation }) {
   const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     function findCategories() {
@@ -17,7 +19,15 @@ export default function CategoriesList({ navigation }) {
     findCategories().then(res => setCategories(res.data));
   }, []);
 
-  return (
+  useEffect(() => {
+    if (categories.length > 0) {
+      setLoading(false);
+    }
+  }, [categories]);
+
+  return loading ? (
+    <Splash />
+  ) : (
     <ContainerGradient>
       <Toolbar title="Categorias" center />
       <Content>

@@ -13,5 +13,3 @@ export const Image = styled.Image.attrs({
 })`
   flex: 1;
 `;
-
-export const Button = styled.TouchableOpacity``;
