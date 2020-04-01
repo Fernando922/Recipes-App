@@ -18,14 +18,10 @@ export default function RecipesList({ navigation }) {
       return api.get(`/recipes?id_category=${selectedId}`);
     }
 
-    findRecipes().then(res => setRecipes(res.data));
+    findRecipes()
+      .then(res => setRecipes(res.data))
+      .then(() => setLoading(false));
   }, []);
-
-  useEffect(() => {
-    if (recipes.length > 0) {
-      setLoading(false);
-    }
-  }, [recipes]);
 
   return (
     <ContainerGradient>
